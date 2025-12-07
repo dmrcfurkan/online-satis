@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <title>pillloMart - Admin Paneli</title>
+    <link rel="icon" href="img/favicon.png" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/animate.css" />
+    <link rel="stylesheet" href="css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="css/all.css" />
+    <link rel="stylesheet" href="css/flaticon.css" />
+    <link rel="stylesheet" href="css/themify-icons.css" />
+    <link rel="stylesheet" href="css/magnific-popup.css" />
+    <link rel="stylesheet" href="css/slick.css" />
+    <link rel="stylesheet" href="css/style.css" />
+
+    <style>
+      .admin-input {
+        border: 1px solid #ccc !important; /* Çerçeveyi zorla göster */
+        padding: 10px;
+        margin-bottom: 15px;
+        border-radius: 5px;
+        width: 100%;
+      }
+      .admin-label {
+        font-weight: bold;
+        color: #333;
+        margin-bottom: 5px;
+        display: block;
+      }
+      .breadcrumb_bg {
+        background-color: #f4f4f4; /* Arka plan rengi */
+        padding: 50px 0;
+        margin-bottom: 50px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <header class="main_menu home_menu">
+      <div class="container">
+        <div class="row align-items-center justify-content-center">
+          <div class="col-lg-12">
+            <nav class="navbar navbar-expand-lg navbar-light">
+              <a class="navbar-brand" href="index.html">
+                <img src="img/logo.png" alt="logo" />
+              </a>
+              <button
+                class="navbar-toggler"
+                type="button"
+                data-toggle="collapse"
+                data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <span class="menu_icon"><i class="fas fa-bars"></i></span>
+              </button>
+
+              <div
+                class="collapse navbar-collapse main-menu-item"
+                id="navbarSupportedContent"
+              >
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link" href="index.html">Siteye Dön</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Admin Paneli</a>
+                  </li>
+                </ul>
+              </div>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
+    <section class="breadcrumb_bg">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+            <div class="text-center">
+              <h2>Admin Yönetim Paneli</h2>
+              <p>Yeni Duyuru / Kampanya Ekleme Sayfası</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact-section section_padding">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <h2 class="contact-title">Yeni İçerik Oluştur</h2>
+            <p>
+              Aşağıdaki formu doldurarak anasayfaya yeni duyuru
+              ekleyebilirsiniz.
+            </p>
+          </div>
+
+          <div class="col-lg-8">
+            <form
+              class="form-contact contact_form"
+              action="#"
+              method="post"
+              id="contactForm"
+              novalidate="novalidate"
+            >
+              <div class="row">
+                <div class="col-12">
+                  <div class="form-group">
+                    <label class="admin-label">Duyuru Başlığı</label>
+                    <input
+                      class="form-control admin-input"
+                      name="subject"
+                      id="subject"
+                      type="text"
+                      placeholder="Örn: Kış İndirimleri Başladı"
+                    />
+                  </div>
+                </div>
+
+                <div class="col-12">
+                  <div class="form-group">
+                    <label class="admin-label">Duyuru Detayı / Metni</label>
+                    <textarea
+                      class="form-control admin-input w-100"
+                      name="message"
+                      id="message"
+                      cols="30"
+                      rows="9"
+                      placeholder="Duyuru metnini buraya giriniz..."
+                    ></textarea>
+                  </div>
+                </div>
+
+                <div class="col-sm-6">
+                  <div class="form-group">
+                    <label class="admin-label">Görsel Yükle (JPG/PNG)</label>
+                    <input type="file" class="form-control-file admin-input" />
+                  </div>
+                </div>
+
+                <div class="col-sm-6">
+                  <div class="form-group">
+                    <label class="admin-label">Ek Dosya (PDF/Word)</label>
+                    <input type="file" class="form-control-file admin-input" />
+                  </div>
+                </div>
+              </div>
+
+              <div class="form-group mt-3">
+                <button
+                  type="submit"
+                  class="btn_3 button-contactForm"
+                  onclick="alert('Duyuru başarıyla veritabanına kaydedildi! (Simülasyon)'); return false;"
+                >
+                  Duyuruyu Yayınla
+                </button>
+              </div>
+            </form>
+          </div>
+
+          <div class="col-lg-3 offset-lg-1">
+            <div class="media contact-info">
+              <span class="contact-info__icon"
+                ><i class="ti-info-alt"></i
+              ></span>
+              <div class="media-body">
+                <h3>Admin Bilgisi</h3>
+                <p>Bu panelden yapılan değişiklikler anında yayına alınır.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer_part">
+      <div class="copyright_part">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12">
+              <div class="copyright_text">
+                <p>Admin Paneli © 2025 pillloMart</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/jquery-1.12.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.magnific-popup.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/jquery.nice-select.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/jquery.counterup.min.js"></script>
+    <script src="js/waypoints.min.js"></script>
+    <script src="js/contact.js"></script>
+    <script src="js/custom.js"></script>
+  </body>
+</html>

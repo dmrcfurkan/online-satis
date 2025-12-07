@@ -1,0 +1,682 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <title>pillloMart</title>
+    <link rel="icon" href="img/favicon.png" />
+
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/animate.css" />
+    <link rel="stylesheet" href="css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="css/all.css" />
+    <link rel="stylesheet" href="css/flaticon.css" />
+    <link rel="stylesheet" href="css/themify-icons.css" />
+    <link rel="stylesheet" href="css/magnific-popup.css" />
+    <link rel="stylesheet" href="css/slick.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/slider.css" />
+  </head>
+  <style>
+    .slider {
+      position: relative;
+      width: 100%;
+      max-width: 600px;
+      margin: auto;
+      overflow: hidden;
+    }
+    .slides {
+      display: flex;
+      transition: 0.5s ease;
+    }
+    .slide {
+      min-width: 100%;
+      box-sizing: border-box;
+    }
+    .arrow {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      font-size: 2rem;
+      background: rgba(0, 0, 0, 0.4);
+      color: #fff;
+      padding: 10px;
+      cursor: pointer;
+      border-radius: 50%;
+      user-select: none;
+    }
+    #prev {
+      left: 10px;
+    }
+    #next {
+      right: 10px;
+    }
+  </style>
+  <body>
+    <!-- Header -->
+    <header class="main_menu home_menu">
+      <div class="container">
+        <div class="row align-items-center justify-content-center">
+          <div class="col-lg-12">
+            <nav class="navbar navbar-expand-lg navbar-light">
+              <a class="navbar-brand" href="index.html">
+                <img src="img/logo.png" alt="logo" />
+              </a>
+
+              <button
+                class="navbar-toggler"
+                type="button"
+                data-toggle="collapse"
+                data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <span class="menu_icon"><i class="fas fa-bars"></i></span>
+              </button>
+
+              <div
+                class="collapse navbar-collapse main-menu-item"
+                id="navbarSupportedContent"
+              >
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link" href="index.html">Anasayfa</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="about.html">Hakkımızda</a>
+                  </li>
+
+                  <li class="nav-item dropdown">
+                    <a
+                      class="nav-link dropdown-toggle"
+                      href="blog.html"
+                      id="navbarDropdown_1"
+                      role="button"
+                      data-toggle="dropdown"
+                      >Ürünler</a
+                    >
+                    <div class="dropdown-menu">
+                      <a class="dropdown-item" href="product_list.html"
+                        >Ürün Listesi</a
+                      >
+                      <a class="dropdown-item" href="single-product.html"
+                        >Ürün Detayı</a
+                      >
+                    </div>
+                  </li>
+
+                  <li class="nav-item dropdown">
+                    <a
+                      class="nav-link dropdown-toggle"
+                      href="#"
+                      id="navbarDropdown_3"
+                      role="button"
+                      data-toggle="dropdown"
+                    >
+                      Sayfalar
+                    </a>
+                    <div class="dropdown-menu">
+                      <a class="dropdown-item" href="login.html">Giriş Yap</a>
+                      <a class="dropdown-item" href="admin-panel.html" style="color:red;">Admin Paneli (Demo)</a>
+                      <a class="dropdown-item" href="checkout.html"
+                        >Ürün Satın Al</a
+                      >
+                      <a class="dropdown-item" href="cart.html"
+                        >Alışveriş Sepeti</a
+                      >
+                      <a class="dropdown-item" href="confirmation.html"
+                        >Sipariş Onayı</a
+                      >
+                      <a class="dropdown-item" href="elements.html"
+                        >Elementler</a
+                      >
+                    </div>
+                  </li>
+
+                  <li class="nav-item dropdown">
+                    <a
+                      class="nav-link dropdown-toggle"
+                      href="#"
+                      id="navbarDropdown_2"
+                      role="button"
+                      data-toggle="dropdown"
+                    >
+                      Blog
+                    </a>
+                    <div class="dropdown-menu">
+                      <a class="dropdown-item" href="blog.html">Blog</a>
+                      <a class="dropdown-item" href="single-blog.html"
+                        >Blog Yazısı</a
+                      >
+                    </div>
+                  </li>
+
+                  <li class="nav-item">
+                    <a class="nav-link" href="contact.html">İletişim</a>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="hearer_icon d-flex align-items-center">
+                <a id="search_1" href="javascript:void(0)"
+                  ><i class="ti-search"></i
+                ></a>
+                <a href="cart.html"
+                  ><i class="flaticon-shopping-cart-black-shape"></i
+                ></a>
+              </div>
+            </nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="search_input" id="search_input_box">
+        <div class="container">
+          <form class="d-flex justify-content-between search-inner">
+            <input
+              type="text"
+              class="form-control"
+              id="search_input"
+              placeholder="Burada Ara"
+            />
+            <button type="submit" class="btn"></button>
+            <span class="ti-close" id="close_search"></span>
+          </form>
+        </div>
+      </div>
+    </header>
+
+    <!-- Banner -->
+    <section class="banner_part">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md-5">
+            <div class="banner_text">
+              <div class="banner_text_iner">
+                <h1>En kaliteli yastıklar</h1>
+                <p>
+                  Eksiksiz araştırılmış büyüme stratejileriyle uyumlu çözümler
+                  sunuyoruz.
+                </p>
+                <a href="product_list.html" class="btn_1">Alışverişe Başla</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="banner_img">
+        <img src="img/banner.png" alt="#" class="img-fluid" />
+        <img
+          src="img/banner_pattern.png"
+          alt="#"
+          class="pattern_img img-fluid"
+        />
+      </div>
+    </section>
+
+    <!-- Single product list -->
+    <section class="single_product_list">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="single_product_iner">
+              <div class="row align-items-center justify-content-between">
+                <div class="col-lg-6 col-sm-6">
+                  <div class="single_product_img">
+                    <img src="img/single_product_1.png" class="img-fluid" />
+                    <img
+                      src="img/product_overlay.png"
+                      class="product_overlay img-fluid"
+                    />
+                  </div>
+                </div>
+
+                <div class="col-lg-5 col-sm-6">
+                  <div class="single_product_content">
+                    <h5>10$'dan başlayan fiyatlarla</h5>
+                    <h2>
+                      <a href="single-product.html"
+                        >Baskılı hafızalı ortopedik modern yastık kılıfı</a
+                      >
+                    </h2>
+                    <a href="product_list.html" class="btn_3">Şimdi İncele</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- 2. ürün -->
+            <div class="single_product_iner">
+              <div class="row align-items-center justify-content-between">
+                <div class="col-lg-6 col-sm-6">
+                  <div class="single_product_img">
+                    <img src="img/single_product_2.png" class="img-fluid" />
+                    <img
+                      src="img/product_overlay.png"
+                      class="product_overlay img-fluid"
+                    />
+                  </div>
+                </div>
+
+                <div class="col-lg-5 col-sm-6">
+                  <div class="single_product_content">
+                    <h5>10$'dan başlayan fiyatlarla</h5>
+                    <h2>
+                      <a href="single-product.html"
+                        >Baskılı hafızalı ortopedik modern yastık kılıfı</a
+                      >
+                    </h2>
+                    <a href="product_list.html" class="btn_3">Şimdi İncele</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- 3. ürün -->
+            <div class="single_product_iner">
+              <div class="row align-items-center justify-content-between">
+                <div class="col-lg-6 col-sm-6">
+                  <div class="single_product_img">
+                    <img src="img/single_product_3.png" class="img-fluid" />
+                    <img
+                      src="img/product_overlay.png"
+                      class="product_overlay img-fluid"
+                    />
+                  </div>
+                </div>
+
+                <div class="col-lg-5 col-sm-6">
+                  <div class="single_product_content">
+                    <h5>10$'dan başlayan fiyatlarla</h5>
+                    <h2>
+                      <a href="single-product.html"
+                        >Baskılı hafızalı ortopedik modern yastık kılıfı</a
+                      >
+                    </h2>
+                    <a href="product_list.html" class="btn_3">Şimdi İncele</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Trending items -->
+    <section class="trending_items">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="section_tittle text-center">
+              <h2>Trend Ürünler</h2>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="product-slider">
+              <!-- Slider container -->
+              <div class="slider-container">
+                <!-- Slider items -->
+                <div class="slider-item active">
+                  <div class="single_product_item">
+                    <div class="single_product_item_thumb">
+                      <img
+                        src="img/tranding_item/tranding_item_1.png"
+                        class="img-fluid"
+                      />
+                    </div>
+                    <h3>
+                      <a href="single-product.html"
+                        >Uçak, araba ve ofis için boyun yastığı</a
+                      >
+                    </h3>
+                    <p>5$'dan başlayan fiyatlarla</p>
+                  </div>
+                </div>
+
+                <div class="slider-item">
+                  <div class="single_product_item">
+                    <img
+                      src="img/tranding_item/tranding_item_2.png"
+                      class="img-fluid"
+                    />
+                    <h3>
+                      <a href="single-product.html"
+                        >Pamuk dolgulu yavaş geri dönen yastıklar</a
+                      >
+                    </h3>
+                    <p>5$'dan başlayan fiyatlarla</p>
+                  </div>
+                </div>
+
+                <div class="slider-item">
+                  <div class="single_product_item">
+                    <img
+                      src="img/tranding_item/tranding_item_3.png"
+                      class="img-fluid"
+                    />
+                    <h3>
+                      <a href="single-product.html"
+                        >Hafızalı köpük dolgulu ortopedik yastık</a
+                      >
+                    </h3>
+                    <p>5$'dan başlayan fiyatlarla</p>
+                  </div>
+                </div>
+
+                <!-- Navigation arrows -->
+                <button class="slider-arrow prev-arrow">&#10094;</button>
+                <button class="slider-arrow next-arrow">&#10095;</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Client Review -->
+    <section class="client_review">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+            <div class="client_review_slider owl-carousel">
+              <div class="single_client_review">
+                <div class="client_img">
+                  <img src="img/client.png" />
+                </div>
+                <p>
+                  "İnsani yardım kuruluşlarıyla birlikte çalışarak, insan
+                  acısını hafifletmeye yönelik programları destekledik."
+                </p>
+                <h5>- Micky Mouse</h5>
+              </div>
+
+              <div class="single_client_review">
+                <div class="client_img">
+                  <img src="img/client_1.png" />
+                </div>
+                <p>
+                  "İnsani yardım kuruluşlarıyla birlikte çalışarak, insan
+                  acısını hafifletmeye yönelik programları destekledik."
+                </p>
+                <h5>- Micky Mouse</h5>
+              </div>
+
+              <div class="single_client_review">
+                <div class="client_img">
+                  <img src="img/client_2.png" />
+                </div>
+                <p>
+                  "İnsani yardım kuruluşlarıyla birlikte çalışarak, insan
+                  acısını hafifletmeye yönelik programları destekledik."
+                </p>
+                <h5>- Micky Mouse</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Feature part -->
+    <section class="feature_part section_padding">
+      <div class="container">
+        <div class="row justify-content-between">
+          <div class="col-lg-6">
+            <div class="feature_part_tittle">
+              <h3>Standartlarla uyumlu detaylı ve yenilikçi çözümler.</h3>
+            </div>
+          </div>
+
+          <div class="col-lg-5">
+            <div class="feature_part_content">
+              <p>
+                Eksiksiz araştırılmış büyüme stratejileri ve uyumlu iç kaynaklar
+                ile sorunsuz çözümler üretin.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="row justify-content-center">
+          <div class="col-lg-3 col-sm-6">
+            <div class="single_feature_part">
+              <img src="img/icon/feature_icon_1.svg" />
+              <h4>Kredi Kartı Desteği</h4>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-sm-6">
+            <div class="single_feature_part">
+              <img src="img/icon/feature_icon_2.svg" />
+              <h4>Online Sipariş</h4>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-sm-6">
+            <div class="single_feature_part">
+              <img src="img/icon/feature_icon_3.svg" />
+              <h4>Ücretsiz Teslimat</h4>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-sm-6">
+            <div class="single_feature_part">
+              <img src="img/icon/feature_icon_4.svg" />
+              <h4>Hediye Paketli Ürün</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    
+
+    <section class="duyurular_part section_padding" style="background-color: #f9f9ff;">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+            <div class="section_tittle text-center">
+              <h2>Duyurular & Kampanyalar</h2>
+              <p>En güncel haberlerimizden ve fırsatlardan haberdar olun.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="single_duyuru p-4 bg-white shadow-sm rounded">
+                    <h5>Yaz Sezonu İndirimleri Başladı!</h5>
+                    <p>Tüm yastık modellerinde %50'ye varan indirimler...</p>
+                    <button type="button" class="btn_3 mt-3" data-toggle="modal" data-target="#duyuruModal1">
+                        Detayları Gör
+                    </button>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="single_duyuru p-4 bg-white shadow-sm rounded">
+                    <h5>Yeni Ortopedik Seri Yayında</h5>
+                    <p>Boyun ağrılarına son veren yeni teknolojimizle tanışın...</p>
+                    <button type="button" class="btn_3 mt-3" data-toggle="modal" data-target="#duyuruModal2">
+                        Detayları Gör
+                    </button>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="single_duyuru p-4 bg-white shadow-sm rounded">
+                    <h5>Kargo Bedava Fırsatı</h5>
+                    <p>Bu hafta sonuna özel 200 TL üzeri alışverişlerde...</p>
+                    <button type="button" class="btn_3 mt-3" data-toggle="modal" data-target="#duyuruModal3">
+                        Detayları Gör
+                    </button>
+                </div>
+            </div>
+            
+            </div>
+
+        <div class="row justify-content-center mt-5">
+            <a href="duyurular.html" class="btn_1">Tüm Duyuruları Gör</a>
+        </div>
+      </div>
+    </section>
+
+    <div class="modal fade" id="duyuruModal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Yaz Sezonu İndirimleri</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <img src="img/banner.png" class="img-fluid mb-3" alt="Duyuru Görseli">
+            <p>Burada duyurunun uzun açıklaması yer alacak. PDF veya Word dosyası linki de burada olabilir.</p>
+            <a href="#" class="btn_3">PDF İndir</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="duyuruModal2" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Yeni Ortopedik Seri</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <p>Ortopedik seri detayları buraya...</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    <div class="modal fade" id="duyuruModal3" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Kargo Bedava</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <p>Kargo kampanya detayları buraya...</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    <!-- Subscribe -->
+    <section class="subscribe_part section_padding">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+            <div class="subscribe_part_content">
+              <h2>Kampanya ve duyuruları alın!</h2>
+              <p>
+                Eksiksiz araştırılmış büyüme stratejileriyle ilgili
+                güncellemeleri almak için abone olun.
+              </p>
+
+              <div class="subscribe_form">
+                <input type="email" placeholder="E-posta adresinizi girin" />
+                <a href="#" class="btn_1">Abone Ol</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer_part">
+      <div class="footer_iner">
+        <div class="container">
+          <div class="row justify-content-between align-items-center">
+            <div class="col-lg-8">
+              <div class="footer_menu">
+                <div class="footer_logo">
+                  <a href="index.html"><img src="img/logo.png" /></a>
+                </div>
+
+                <div class="footer_menu_item">
+                  <a href="index.html">Anasayfa</a>
+                  <a href="about.html">Hakkımızda</a>
+                  <a href="product_list.html">Ürünler</a>
+                  <a href="#">Sayfalar</a>
+                  <a href="blog.html">Blog</a>
+                  <a href="contact.html">İletişim</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4">
+              <div class="social_icon">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-google-plus-g"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="copyright_part">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12">
+              <div class="copyright_text">
+                <p>
+                  Copyright ©
+                  <script>
+                    document.write(new Date().getFullYear());
+                  </script>
+                  Tüm hakları saklıdır | Bu şablon <i class="ti-heart"></i> ile
+                  Colorlib tarafından yapılmıştır
+                </p>
+
+                <div class="copyright_link">
+                  <a href="#">Şartlar & Koşullar</a>
+                  <a href="#">SSS</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/slider.js"></script>
+    <script src="js/jquery-1.12.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.magnific-popup.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/jquery.nice-select.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/jquery.counterup.min.js"></script>
+    <script src="js/waypoints.min.js"></script>
+    <script src="js/contact.js"></script>
+    <script src="js/jquery.ajaxchimp.min.js"></script>
+    <script src="js/jquery.form.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+    <script src="js/mail-script.js"></script>
+    <script src="js/custom.js"></script>
+  </body>
+</html>

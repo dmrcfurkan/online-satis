@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <title>pillloMart - Tüm Duyurular</title>
+    <link rel="icon" href="img/favicon.png" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/animate.css" />
+    <link rel="stylesheet" href="css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="css/all.css" />
+    <link rel="stylesheet" href="css/flaticon.css" />
+    <link rel="stylesheet" href="css/themify-icons.css" />
+    <link rel="stylesheet" href="css/magnific-popup.css" />
+    <link rel="stylesheet" href="css/slick.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <style>
+        .single_duyuru {
+            transition: all 0.3s ease;
+            border: 1px solid #eee;
+            height: 100%; /* Kutuların eşit boyda olması için */
+        }
+        .single_duyuru:hover {
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+            transform: translateY(-5px);
+        }
+        .breadcrumb_bg_2 {
+            background-image: url('img/banner.png');
+            background-size: cover;
+            background-position: center;
+            padding: 100px 0;
+            margin-bottom: 50px;
+        }
+    </style>
+  </head>
+
+  <body>
+    <header class="main_menu home_menu">
+      <div class="container">
+        <div class="row align-items-center justify-content-center">
+          <div class="col-lg-12">
+            <nav class="navbar navbar-expand-lg navbar-light">
+              <a class="navbar-brand" href="index.html"> <img src="img/logo.png" alt="logo" /> </a>
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="menu_icon"><i class="fas fa-bars"></i></span>
+              </button>
+
+              <div class="collapse navbar-collapse main-menu-item" id="navbarSupportedContent">
+                <ul class="navbar-nav">
+                  <li class="nav-item"><a class="nav-link" href="index.html">Anasayfa</a></li>
+                  <li class="nav-item"><a class="nav-link" href="about.html">Hakkımızda</a></li>
+                  <li class="nav-item"><a class="nav-link active" href="duyurular.html">Duyurular</a></li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown_3" role="button" data-toggle="dropdown">Sayfalar</a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="admin-panel.html" style="color: red;">Admin Paneli</a>
+                    </div>
+                  </li>
+                  <li class="nav-item"><a class="nav-link" href="contact.html">İletişim</a></li>
+                </ul>
+              </div>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section class="breadcrumb_bg_2">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="text-center">
+                        <h1 style="font-weight: bold; color: #222;">DUYURULAR</h1>
+                        <p style="color: #555;">Firmamızdan en güncel haberler</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="duyuru_listesi section_padding">
+        <div class="container">
+            <div class="row">
+                
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="single_duyuru p-4 bg-white rounded">
+                        <span class="badge badge-primary mb-2">İndirim</span>
+                        <h4>Yaz Sezonu İndirimleri</h4>
+                        <p>Tüm yastık modellerinde %50 indirim başladı...</p>
+                        <button type="button" class="btn_3 mt-3" data-toggle="modal" data-target="#modal1">Detayları Gör</button>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="single_duyuru p-4 bg-white rounded">
+                        <span class="badge badge-success mb-2">Kampanya</span>
+                        <h4>3 Al 2 Öde Fırsatı</h4>
+                        <p>Seçili ürünlerde geçerli olan bu kampanyayı kaçırmayın...</p>
+                        <button type="button" class="btn_3 mt-3" data-toggle="modal" data-target="#modal2">Detayları Gör</button>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="single_duyuru p-4 bg-white rounded">
+                        <span class="badge badge-warning mb-2">Haber</span>
+                        <h4>Web Sitemiz Yenilendi</h4>
+                        <p>Sizlere daha iyi hizmet verebilmek için arayüzümüzü yeniledik...</p>
+                        <button type="button" class="btn_3 mt-3" data-toggle="modal" data-target="#modal3">Detayları Gör</button>
+                    </div>
+                </div>
+
+                 <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="single_duyuru p-4 bg-white rounded">
+                        <span class="badge badge-info mb-2">Etkinlik</span>
+                        <h4>Uyku Sağlığı Semineri</h4>
+                        <p>Uzman doktorların katılımıyla gerçekleşecek seminerimiz...</p>
+                        <button type="button" class="btn_3 mt-3" data-toggle="modal" data-target="#modal4">Detayları Gör</button>
+                    </div>
+                </div>
+                
+                 <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="single_duyuru p-4 bg-white rounded">
+                        <span class="badge badge-danger mb-2">Önemli</span>
+                        <h4>Kargo Süreçleri Hakkında</h4>
+                        <p>Yoğunluk sebebiyle kargo teslimat sürelerinde güncelleme...</p>
+                        <button type="button" class="btn_3 mt-3" data-toggle="modal" data-target="#modal5">Detayları Gör</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <div class="modal fade" id="modal1" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Yaz Sezonu İndirimleri Detayı</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            </div>
+            <div class="modal-body">
+              <img src="img/feature/feature_1.png" style="width:100%; max-height:200px; object-fit:contain;" class="mb-3">
+              <p>Yaz geldi! Sıcak havalarda terletmeyen özel kumaşlı yastıklarımızda büyük indirim başladı. 
+                 <br><br> Kampanya 1 Haziran - 30 Ağustos tarihleri arasında geçerlidir. Stoklarla sınırlıdır.</p>
+              <hr>
+              <a href="#" class="btn btn-sm btn-dark">Katalog İndir (PDF)</a>
+            </div>
+          </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modal2" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">3 Al 2 Öde Kampanyası</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            </div>
+            <div class="modal-body">
+              <img src="img/feature/feature_2.png" style="width:100%; max-height:200px; object-fit:contain;" class="mb-3">
+              <p>Evinizin tüm odalarını yenileyin diye 3 yastık alımında en düşük fiyatlı olanı bizden hediye!
+                 <br> Sepetinizde otomatik olarak uygulanacaktır.</p>
+            </div>
+          </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modal3" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Web Sitemiz Yenilendi</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            </div>
+            <div class="modal-body">
+              <p>Siz değerli müşterilerimize daha hızlı ve kolay bir alışveriş deneyimi sunmak için altyapımızı yeniledik. 
+                 Mobil uyumlu tasarımımızla artık telefondan sipariş vermek çok daha kolay.</p>
+            </div>
+          </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modal4" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Uyku Sağlığı Semineri</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            </div>
+            <div class="modal-body">
+              <p>Prof. Dr. Ahmet Yılmaz ile "Doğru Yastık Seçimi ve Boyun Sağlığı" konulu online seminerimize davetlisiniz.
+                 <br> Tarih: 25 Kasım 2025 <br> Saat: 20:00</p>
+              <a href="#" class="btn_3">Kayıt Ol</a>
+            </div>
+          </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modal5" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Kargo Bilgilendirmesi</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            </div>
+            <div class="modal-body">
+              <p>Yıl sonu yoğunluğu nedeniyle kargo teslim sürelerimiz 3-5 iş günü olarak güncellenmiştir. Anlayışınız için teşekkür ederiz.</p>
+            </div>
+          </div>
+        </div>
+    </div>
+
+    <footer class="footer_part">
+        <div class="copyright_part">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-12">
+                <div class="copyright_text">
+                  <p>Copyright © 2025 pillloMart. Tüm hakları saklıdır.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+  
+      <script src="js/jquery-1.12.1.min.js"></script>
+      <script src="js/popper.min.js"></script>
+      <script src="js/bootstrap.min.js"></script>
+      <script src="js/jquery.magnific-popup.js"></script>
+      <script src="js/owl.carousel.min.js"></script>
+      <script src="js/jquery.nice-select.min.js"></script>
+      <script src="js/slick.min.js"></script>
+      <script src="js/jquery.counterup.min.js"></script>
+      <script src="js/waypoints.min.js"></script>
+      <script src="js/contact.js"></script>
+      <script src="js/custom.js"></script>
+  </body>
+</html>

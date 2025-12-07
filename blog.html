@@ -1,0 +1,651 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <title>pillloMart - Blog</title>
+    <link rel="icon" href="img/favicon.png" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/animate.css" />
+    <link rel="stylesheet" href="css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="css/all.css" />
+    <link rel="stylesheet" href="css/flaticon.css" />
+    <link rel="stylesheet" href="css/themify-icons.css" />
+    <link rel="stylesheet" href="css/magnific-popup.css" />
+    <link rel="stylesheet" href="css/slick.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <header class="main_menu home_menu">
+      <div class="container">
+        <div class="row align-items-center justify-content-center">
+          <div class="col-lg-12">
+            <nav class="navbar navbar-expand-lg navbar-light">
+              <a class="navbar-brand" href="index.html">
+                <img src="img/logo.png" alt="logo" />
+              </a>
+              <button
+                class="navbar-toggler"
+                type="button"
+                data-toggle="collapse"
+                data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <span class="menu_icon"><i class="fas fa-bars"></i></span>
+              </button>
+
+              <div
+                class="collapse navbar-collapse main-menu-item"
+                id="navbarSupportedContent"
+              >
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link" href="index.html">Anasayfa</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="about.html">Hakkımızda</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a
+                      class="nav-link dropdown-toggle"
+                      href="blog.html"
+                      id="navbarDropdown_1"
+                      role="button"
+                      data-toggle="dropdown"
+                      aria-haspopup="true"
+                      aria-expanded="false"
+                    >
+                      Ürünler
+                    </a>
+                    <div
+                      class="dropdown-menu"
+                      aria-labelledby="navbarDropdown_1"
+                    >
+                      <a class="dropdown-item" href="product_list.html"
+                        >Ürün Listesi</a
+                      >
+                      <a class="dropdown-item" href="single-product.html"
+                        >Ürün Detayı</a
+                      >
+                    </div>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a
+                      class="nav-link dropdown-toggle"
+                      href="blog.html"
+                      id="navbarDropdown_3"
+                      role="button"
+                      data-toggle="dropdown"
+                      aria-haspopup="true"
+                      aria-expanded="false"
+                    >
+                      Sayfalar
+                    </a>
+                    <div
+                      class="dropdown-menu"
+                      aria-labelledby="navbarDropdown_2"
+                    >
+                      <a class="dropdown-item" href="login.html">Giriş Yap</a>
+                      <a class="dropdown-item" href="checkout.html">Ödeme</a>
+                      <a class="dropdown-item" href="cart.html"
+                        >Alışveriş Sepeti</a
+                      >
+                      <a class="dropdown-item" href="confirmation.html">Onay</a>
+                      <a class="dropdown-item" href="elements.html"
+                        >Elementler</a
+                      >
+                    </div>
+                  </li>
+
+                  <li class="nav-item dropdown">
+                    <a
+                      class="nav-link dropdown-toggle"
+                      href="blog.html"
+                      id="navbarDropdown_2"
+                      role="button"
+                      data-toggle="dropdown"
+                      aria-haspopup="true"
+                      aria-expanded="false"
+                    >
+                      Blog
+                    </a>
+                    <div
+                      class="dropdown-menu"
+                      aria-labelledby="navbarDropdown_2"
+                    >
+                      <a class="dropdown-item" href="blog.html">Blog</a>
+                      <a class="dropdown-item" href="single-blog.html"
+                        >Blog Detayı</a
+                      >
+                    </div>
+                  </li>
+
+                  <li class="nav-item">
+                    <a class="nav-link" href="contact.html">İletişim</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="hearer_icon d-flex align-items-center">
+                <a id="search_1" href="javascript:void(0)"
+                  ><i class="ti-search"></i
+                ></a>
+                <a href="cart.html">
+                  <i class="flaticon-shopping-cart-black-shape"></i>
+                </a>
+              </div>
+            </nav>
+          </div>
+        </div>
+      </div>
+      <div class="search_input" id="search_input_box">
+        <div class="container">
+          <form class="d-flex justify-content-between search-inner">
+            <input
+              type="text"
+              class="form-control"
+              id="search_input"
+              placeholder="Burada Ara"
+            />
+            <button type="submit" class="btn"></button>
+            <span
+              class="ti-close"
+              id="close_search"
+              title="Aramayı Kapat"
+            ></span>
+          </form>
+        </div>
+      </div>
+    </header>
+    <section class="breadcrumb_part">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="breadcrumb_iner">
+              <h2>Blog</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="blog_area section_padding">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 mb-5 mb-lg-0">
+            <div class="blog_left_sidebar">
+              <article class="blog_item">
+                <div class="blog_item_img">
+                  <img
+                    class="card-img rounded-0"
+                    src="img/blog/single_blog_1.png"
+                    alt=""
+                  />
+                  <a href="#" class="blog_item_date">
+                    <h3>15</h3>
+                    <p>Oca</p>
+                  </a>
+                </div>
+
+                <div class="blog_details">
+                  <a class="d-inline-block" href="single-blog.html">
+                    <h2>Google yeni 35 katlı ofis anlaşmasını imzaladı</h2>
+                  </a>
+                  <p>
+                    Teknoloji devi Google, büyüme stratejileri kapsamında yeni
+                    ofis binası için anlaşmaya vardı. Detaylar ve mimari planlar
+                    yakında açıklanacak.
+                  </p>
+                  <ul class="blog-info-link">
+                    <li>
+                      <a href="#"><i class="far fa-user"></i> Seyahat, Yaşam</a>
+                    </li>
+                    <li>
+                      <a href="#"><i class="far fa-comments"></i> 03 Yorum</a>
+                    </li>
+                  </ul>
+                </div>
+              </article>
+
+              <article class="blog_item">
+                <div class="blog_item_img">
+                  <img
+                    class="card-img rounded-0"
+                    src="img/blog/single_blog_2.png"
+                    alt=""
+                  />
+                  <a href="#" class="blog_item_date">
+                    <h3>15</h3>
+                    <p>Oca</p>
+                  </a>
+                </div>
+
+                <div class="blog_details">
+                  <a class="d-inline-block" href="single-blog.html">
+                    <h2>Modern Ev Dekorasyonunda Son Trendler</h2>
+                  </a>
+                  <p>
+                    Evlerinizde minimalizmi ve konforu birleştiren yeni nesil
+                    dekorasyon fikirlerini sizler için derledik. İşte bu yılın
+                    öne çıkan renkleri.
+                  </p>
+                  <ul class="blog-info-link">
+                    <li>
+                      <a href="#"
+                        ><i class="far fa-user"></i> Dekorasyon, Yaşam</a
+                      >
+                    </li>
+                    <li>
+                      <a href="#"><i class="far fa-comments"></i> 03 Yorum</a>
+                    </li>
+                  </ul>
+                </div>
+              </article>
+
+              <article class="blog_item">
+                <div class="blog_item_img">
+                  <img
+                    class="card-img rounded-0"
+                    src="img/blog/single_blog_3.png"
+                    alt=""
+                  />
+                  <a href="#" class="blog_item_date">
+                    <h3>15</h3>
+                    <p>Oca</p>
+                  </a>
+                </div>
+
+                <div class="blog_details">
+                  <a class="d-inline-block" href="single-blog.html">
+                    <h2>Sağlıklı Uyku İçin Yastık Seçimi</h2>
+                  </a>
+                  <p>
+                    Kaliteli bir uyku için doğru yastığı seçmek sandığınızdan
+                    daha önemli olabilir. Ortopedik yastıkların faydalarını
+                    inceledik.
+                  </p>
+                  <ul class="blog-info-link">
+                    <li>
+                      <a href="#"
+                        ><i class="far fa-user"></i> Sağlık, Ürünler</a
+                      >
+                    </li>
+                    <li>
+                      <a href="#"><i class="far fa-comments"></i> 03 Yorum</a>
+                    </li>
+                  </ul>
+                </div>
+              </article>
+
+              <article class="blog_item">
+                <div class="blog_item_img">
+                  <img
+                    class="card-img rounded-0"
+                    src="img/blog/single_blog_4.png"
+                    alt=""
+                  />
+                  <a href="#" class="blog_item_date">
+                    <h3>15</h3>
+                    <p>Oca</p>
+                  </a>
+                </div>
+
+                <div class="blog_details">
+                  <a class="d-inline-block" href="single-blog.html">
+                    <h2>Teknoloji Dünyasından Son Haberler</h2>
+                  </a>
+                  <p>
+                    Yapay zeka teknolojilerindeki son gelişmeler ve hayatımıza
+                    etkileri üzerine kapsamlı bir inceleme yazısı.
+                  </p>
+                  <ul class="blog-info-link">
+                    <li>
+                      <a href="#"><i class="far fa-user"></i> Teknoloji</a>
+                    </li>
+                    <li>
+                      <a href="#"><i class="far fa-comments"></i> 03 Yorum</a>
+                    </li>
+                  </ul>
+                </div>
+              </article>
+
+              <article class="blog_item">
+                <div class="blog_item_img">
+                  <img
+                    class="card-img rounded-0"
+                    src="img/blog/single_blog_5.png"
+                    alt=""
+                  />
+                  <a href="#" class="blog_item_date">
+                    <h3>15</h3>
+                    <p>Oca</p>
+                  </a>
+                </div>
+
+                <div class="blog_details">
+                  <a class="d-inline-block" href="single-blog.html">
+                    <h2>Seyahat Tutkunları İçin Rota Önerileri</h2>
+                  </a>
+                  <p>
+                    Bu yaz keşfetmeniz gereken gizli kalmış cennet köşeler ve
+                    seyahat ipuçları bu yazımızda.
+                  </p>
+                  <ul class="blog-info-link">
+                    <li>
+                      <a href="#"><i class="far fa-user"></i> Seyahat, Yaşam</a>
+                    </li>
+                    <li>
+                      <a href="#"><i class="far fa-comments"></i> 03 Yorum</a>
+                    </li>
+                  </ul>
+                </div>
+              </article>
+
+              <nav class="blog-pagination justify-content-center d-flex">
+                <ul class="pagination">
+                  <li class="page-item">
+                    <a href="#" class="page-link" aria-label="Previous">
+                      <i class="ti-angle-left"></i>
+                    </a>
+                  </li>
+                  <li class="page-item">
+                    <a href="#" class="page-link">1</a>
+                  </li>
+                  <li class="page-item active">
+                    <a href="#" class="page-link">2</a>
+                  </li>
+                  <li class="page-item">
+                    <a href="#" class="page-link" aria-label="Next">
+                      <i class="ti-angle-right"></i>
+                    </a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="blog_right_sidebar">
+              <aside class="single_sidebar_widget search_widget">
+                <form action="#">
+                  <div class="form-group">
+                    <div class="input-group mb-3">
+                      <input
+                        type="text"
+                        class="form-control"
+                        placeholder="Anahtar Kelime Ara"
+                        onfocus="this.placeholder = ''"
+                        onblur="this.placeholder = 'Anahtar Kelime Ara'"
+                      />
+                      <div class="input-group-append">
+                        <button class="btn" type="button">
+                          <i class="ti-search"></i>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <button
+                    class="button rounded-0 primary-bg text-white w-100 btn_1"
+                    type="submit"
+                  >
+                    Ara
+                  </button>
+                </form>
+              </aside>
+
+              <aside class="single_sidebar_widget post_category_widget">
+                <h4 class="widget_title">Kategoriler</h4>
+                <ul class="list cat-list">
+                  <li>
+                    <a href="#" class="d-flex">
+                      <p>Restoran Yemekleri</p>
+                      <p>(37)</p>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="d-flex">
+                      <p>Seyahat Haberleri</p>
+                      <p>(10)</p>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="d-flex">
+                      <p>Modern Teknoloji</p>
+                      <p>(03)</p>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="d-flex">
+                      <p>Ürünler</p>
+                      <p>(11)</p>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="d-flex">
+                      <p>İlham Verenler</p>
+                      <p>21</p>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="d-flex">
+                      <p>Sağlık Hizmetleri (21)</p>
+                      <p>09</p>
+                    </a>
+                  </li>
+                </ul>
+              </aside>
+
+              <aside class="single_sidebar_widget popular_post_widget">
+                <h3 class="widget_title">Son Gönderiler</h3>
+                <div class="media post_item">
+                  <img src="img/post/post_1.png" alt="post" />
+                  <div class="media-body">
+                    <a href="single-blog.html">
+                      <h3>Hayat balık gibidir...</h3>
+                    </a>
+                    <p>12 Ocak 2025</p>
+                  </div>
+                </div>
+                <div class="media post_item">
+                  <img src="img/post/post_2.png" alt="post" />
+                  <div class="media-body">
+                    <a href="single-blog.html">
+                      <h3>Muhteşem Hubble</h3>
+                    </a>
+                    <p>02 Saat önce</p>
+                  </div>
+                </div>
+                <div class="media post_item">
+                  <img src="img/post/post_3.png" alt="post" />
+                  <div class="media-body">
+                    <a href="single-blog.html">
+                      <h3>Astronomi mi Astroloji mi</h3>
+                    </a>
+                    <p>03 Saat önce</p>
+                  </div>
+                </div>
+                <div class="media post_item">
+                  <img src="img/post/post_4.png" alt="post" />
+                  <div class="media-body">
+                    <a href="single-blog.html">
+                      <h3>Asteroid Teleskobu</h3>
+                    </a>
+                    <p>01 Saat önce</p>
+                  </div>
+                </div>
+              </aside>
+              <aside class="single_sidebar_widget tag_cloud_widget">
+                <h4 class="widget_title">Etiket Bulutu</h4>
+                <ul class="list">
+                  <li>
+                    <a href="#">proje</a>
+                  </li>
+                  <li>
+                    <a href="#">aşk</a>
+                  </li>
+                  <li>
+                    <a href="#">teknoloji</a>
+                  </li>
+                  <li>
+                    <a href="#">seyahat</a>
+                  </li>
+                  <li>
+                    <a href="#">restoran</a>
+                  </li>
+                  <li>
+                    <a href="#">yaşam tarzı</a>
+                  </li>
+                  <li>
+                    <a href="#">tasarım</a>
+                  </li>
+                  <li>
+                    <a href="#">illüstrasyon</a>
+                  </li>
+                </ul>
+              </aside>
+
+              <aside class="single_sidebar_widget instagram_feeds">
+                <h4 class="widget_title">Instagram Akışı</h4>
+                <ul class="instagram_row flex-wrap">
+                  <li>
+                    <a href="#">
+                      <img class="img-fluid" src="img/post/post_5.png" alt="" />
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <img class="img-fluid" src="img/post/post_6.png" alt="" />
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <img class="img-fluid" src="img/post/post_7.png" alt="" />
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <img class="img-fluid" src="img/post/post_8.png" alt="" />
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <img class="img-fluid" src="img/post/post_9.png" alt="" />
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <img
+                        class="img-fluid"
+                        src="img/post/post_10.png"
+                        alt=""
+                      />
+                    </a>
+                  </li>
+                </ul>
+              </aside>
+
+              <aside class="single_sidebar_widget newsletter_widget">
+                <h4 class="widget_title">Bülten</h4>
+
+                <form action="#">
+                  <div class="form-group">
+                    <input
+                      type="email"
+                      class="form-control"
+                      onfocus="this.placeholder = ''"
+                      onblur="this.placeholder = 'E-posta girin'"
+                      placeholder="E-posta girin"
+                      required
+                    />
+                  </div>
+                  <button
+                    class="button rounded-0 primary-bg text-white w-100 btn_1"
+                    type="submit"
+                  >
+                    Abone Ol
+                  </button>
+                </form>
+              </aside>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="footer_part">
+      <div class="footer_iner section_bg">
+        <div class="container">
+          <div class="row justify-content-between align-items-center">
+            <div class="col-lg-8">
+              <div class="footer_menu">
+                <div class="footer_logo">
+                  <a href="index.html"><img src="img/logo.png" alt="#" /></a>
+                </div>
+                <div class="footer_menu_item">
+                  <a href="index.html">Anasayfa</a>
+                  <a href="about.html">Hakkımızda</a>
+                  <a href="product_list.html">Ürünler</a>
+                  <a href="#">Sayfalar</a>
+                  <a href="blog.html">Blog</a>
+                  <a href="contact.html">İletişim</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="social_icon">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-google-plus-g"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="copyright_part">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12">
+              <div class="copyright_text">
+                <p>
+                  Copyright &copy;
+                  <script>
+                    document.write(new Date().getFullYear());
+                  </script>
+                  Tüm Hakları Saklıdır | Bu şablon
+                  <i class="ti-heart" aria-hidden="true"></i> ile
+                  <a href="https://colorlib.com" target="_blank">Colorlib</a>
+                  tarafından yapılmıştır.
+                </p>
+                <div class="copyright_link">
+                  <a href="#">Şartlar & Koşullar</a>
+                  <a href="#">SSS</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="js/jquery-1.12.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.magnific-popup.js"></script>
+    <script src="js/swiper.min.js"></script>    
+    <script src="js/mixitup.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/jquery.nice-select.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/jquery.counterup.min.js"></script>
+    <script src="js/waypoints.min.js"></script>
+    <script src="js/contact.js"></script>
+    <script src="js/jquery.ajaxchimp.min.js"></script>
+    <script src="js/jquery.form.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+    <script src="js/mail-script.js"></script>
+    <script src="js/custom.js"></script>
+  </body>
+</html>

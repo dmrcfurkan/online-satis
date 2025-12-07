@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <section class="breadcrumb breadcrumb_bg">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+            <div class="breadcrumb_iner">
+              <div class="breadcrumb_iner_item">
+                <h2>Admin Paneli</h2>
+                <p>Duyuru Ekleme / Düzenleme Sayfası</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact-section padding_top">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <h2 class="contact-title">Yeni Duyuru Ekle</h2>
+          </div>
+          <div class="col-lg-8">
+            <form
+              class="form-contact contact_form"
+              action="#"
+              method="post"
+              id="contactForm"
+            >
+              <div class="row">
+                <div class="col-12">
+                  <div class="form-group">
+                    <label>Duyuru Başlığı</label>
+                    <input
+                      class="form-control"
+                      name="subject"
+                      id="subject"
+                      type="text"
+                      placeholder="Örn: Yaz İndirimi"
+                    />
+                  </div>
+                </div>
+
+                <div class="col-12">
+                  <div class="form-group">
+                    <label>Duyuru İçeriği</label>
+                    <textarea
+                      class="form-control w-100"
+                      name="message"
+                      id="message"
+                      cols="30"
+                      rows="9"
+                      placeholder="Duyuru detaylarını buraya giriniz..."
+                    ></textarea>
+                  </div>
+                </div>
+
+                <div class="col-sm-6">
+                  <div class="form-group">
+                    <label>Duyuru Görseli (Resim)</label>
+                    <input type="file" class="form-control-file" />
+                  </div>
+                </div>
+
+                <div class="col-sm-6">
+                  <div class="form-group">
+                    <label>Ek Dosya (PDF/Word)</label>
+                    <input type="file" class="form-control-file" />
+                  </div>
+                </div>
+              </div>
+
+              <div class="form-group mt-3">
+                <button type="submit" class="btn_3 button-contactForm">
+                  Duyuruyu Yayınla
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
